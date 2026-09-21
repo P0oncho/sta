@@ -24,11 +24,8 @@ async function buscarPelicula(titulo) {
     if (data.Response === 'True') {
       resultDiv.innerHTML = `
         <h2>${data.Title} (${data.Year})</h2>
-        <p><strong>Género:</strong> ${data.Genre}</p>
         <p><strong>Director:</strong> ${data.Director}</p>
-        <p><strong>Sinopsis:</strong> ${data.Plot}</p>
-        ${data.Poster !== 'N/A' ? `<img src="${data.Poster}" alt="Póster de ${data.Title}">` : ''}
-      `;
+       `;
     } else {
       resultDiv.innerHTML = `<p style="color: red;">Película no encontrada: ${data.Error}</p>`;
     }
