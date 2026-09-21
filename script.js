@@ -1,1 +1,1 @@
-alert("¡Hola! Bienvenido a mi página web.");
+console.log("¡Hola! Bienvenido a mi página web.");
