@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mi página</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador de Películas - OMDb</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<script src="script.js"></script>
 <body>
 
-    <h1>Mi página web</h1>
+  <h1>Buscador de Películas</h1>
+  
+  <div class="search-box">
+    <input type="text" id="movieInput" placeholder="Escribe el nombre de una película...">
+    <button id="searchBtn">Buscar</button>
+  </div>
 
-    <p>Este es un párrafo de ejemplo para mi página web.</p>
+  <div id="result"></div>
 
-    <input type="text" placeholder="Escribe algo">
-    <button>Enviar</button>
-
+  <script src="script.js"></script>
 </body>
 </html>
