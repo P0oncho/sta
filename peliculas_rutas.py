@@ -1,18 +1,55 @@
 from base_datos import leer_json, guardar_json
 
 def manejar_get_peliculas(partes):
-    lista = leer_json("peliculas.json")
+    lista_pelis = leer_json("peliculas.json")
+    lista_actores = leer_json("actores.json")
     
-    # Si piden todas (/peliculas)
+    # Si piden TODAS las películas (/peliculas)
     if len(partes) == 2:
-        return 200, lista
+        pelis_listas_para_enviar = []
         
-    # Si piden una concreta (/peliculas/5)
+        for peli in lista_pelis:
+            actores_completos = []
+            
+            # Por cada ID de actor en la película, buscamos sus datos reales
+            for id_actor in peli["actores"]:
+                for actor in lista_actores:
+                    if actor["id"] == id_actor:
+                        actores_completos.append(actor["nombre"]) # Guardamos el objeto entero
+            
+            # Creamos una copia de la película pero con la lista de actores llena
+            peli_terminada = {
+                "id": peli["id"],
+                "nombre": peli["nombre"],
+                "año": peli["año"],
+                "actores": actores_completos
+            }
+            pelis_listas_para_enviar.append(peli_terminada)
+            
+        return 200, pelis_listas_para_enviar
+        
+    # Si piden UNA película concreta (/peliculas/5)
     elif len(partes) == 3:
         id_buscado = int(partes[2])
-        for peli in lista:
+        
+        for peli in lista_pelis:
             if peli["id"] == id_buscado:
-                return 200, peli
+                actores_completos = []
+                
+                # Hacemos exactamente lo mismo: buscar los datos de sus actores
+                for id_actor in peli["actores"]:
+                    for actor in lista_actores:
+                        if actor["id"] == id_actor:
+                            actores_completos.append(actor["nombre"])
+                            
+                peli_terminada = {
+                    "id": peli["id"],
+                    "nombre": peli["nombre"],
+                    "año": peli["año"],
+                    "actores": actores_completos
+                }
+                return 200, peli_terminada
+                
         return 404, {"error": "Película no encontrada"}
         
     return 404, {"error": "Ruta incorrecta"}
