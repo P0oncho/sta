@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "nombre_completo": "Keanu Reeves",
+    "año_nacimiento": 1964
+  },
+  {
+    "id": 2,
+    "nombre_completo": "Carrie-Anne Moss",
+    "año_nacimiento": 1967
+  },
+  {
+    "id": 3,
+    "nombre_completo": "Laurence Fishburne",
+    "año_nacimiento": 1961
+  },
+  {
+    "id": 4,
+    "nombre_completo": "Leonardo DiCaprio",
+    "año_nacimiento": 1974
+  },
+  {
+    "id": 5,
+    "nombre_completo": "Joseph Gordon-Levitt",
+    "año_nacimiento": 1981
+  },
+  {
+    "id": 6,
+    "nombre_completo": "Elliot Page",
+    "año_nacimiento": 1987
+  },
+  {
+    "id": 7,
+    "nombre_completo": "Matthew McConaughey",
+    "año_nacimiento": 1969
+  },
+  {
+    "id": 8,
+    "nombre_completo": "Anne Hathaway",
+    "año_nacimiento": 1982
+  },
+  {
+    "id": 9,
+    "nombre_completo": "Jessica Chastain",
+    "año_nacimiento": 1977
+  },
+  {
+    "id": 10,
+    "nombre_completo": "Christian Bale",
+    "año_nacimiento": 1974
+  },
+  {
+    "id": 11,
+    "nombre_completo": "Heath Ledger",
+    "año_nacimiento": 1979
+  },
+  {
+    "id": 12,
+    "nombre_completo": "Aaron Eckhart",
+    "año_nacimiento": 1968
+  },
+  {
+    "id": 13,
+    "nombre_completo": "John Travolta",
+    "año_nacimiento": 1954
+  },
+  {
+    "id": 14,
+    "nombre_completo": "Samuel L. Jackson",
+    "año_nacimiento": 1948
+  },
+  {
+    "id": 15,
+    "nombre_completo": "Uma Thurman",
+    "año_nacimiento": 1970
+  }
+]

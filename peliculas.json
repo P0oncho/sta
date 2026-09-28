@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "Nombre": "Cadena perpetua",
+    "año_publicacion": 1994,
+    "actores": [
+      "Tim Robbins",
+      "Morgan Freeman",
+      "Bob Gunton"
+    ]
+  },
+  {
+    "id": 2,
+    "Nombre": "El padrino",
+    "año_publicacion": 1972,
+    "actores": [
+      "Marlon Brando",
+      "Al Pacino",
+      "James Caan"
+    ]
+  },
+  {
+    "id": 3,
+    "Nombre": "El caballero oscuro",
+    "año_publicacion": 2008,
+    "actores": [
+      "Christian Bale",
+      "Heath Ledger",
+      "Aaron Eckhart"
+    ]
+  },
+  {
+    "id": 4,
+    "Nombre": "Matrix",
+    "año_publicacion": 1999,
+    "actores": [
+      "Keanu Reeves",
+      "Laurence Fishburne",
+      "Carrie-Anne Moss"
+    ]
+  },
+  {
+    "id": 5,
+    "Nombre": "Origen",
+    "año_publicacion": 2010,
+    "actores": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Elliot Page"
+    ]
+  },
+  {
+    "id": 6,
+    "Nombre": "Forrest Gump",
+    "año_publicacion": 1994,
+    "actores": [
+      "Tom Hanks",
+      "Robin Wright",
+      "Gary Sinise"
+    ]
+  },
+  {
+    "id": 7,
+    "Nombre": "Pulp Fiction",
+    "año_publicacion": 1994,
+    "actores": [
+      "John Travolta",
+      "Uma Thurman",
+      "Samuel L. Jackson"
+    ]
+  },
+  {
+    "id": 8,
+    "Nombre": "El club de la lucha",
+    "año_publicacion": 1999,
+    "actores": [
+      "Brad Pitt",
+      "Edward Norton",
+      "Helena Bonham Carter"
+    ]
+  },
+  {
+    "id": 9,
+    "Nombre": "El Señor de los Anillos: La Comunidad del Anillo",
+    "año_publicacion": 2001,
+    "actores": [
+      "Elijah Wood",
+      "Ian McKellen",
+      "Viggo Mortensen"
+    ]
+  },
+  {
+    "id": 10,
+    "Nombre": "La lista de Schindler",
+    "año_publicacion": 1993,
+    "actores": [
+      "Liam Neeson",
+      "Ralph Fiennes",
+      "Ben Kingsley"
+    ]
+  },
+  {
+    "id": 11,
+    "Nombre": "Interstellar",
+    "año_publicacion": 2014,
+    "actores": [
+      "Matthew McConaughey",
+      "Anne Hathaway",
+      "Jessica Chastain"
+    ]
+  },
+  {
+    "id": 12,
+    "Nombre": "La guerra de las galaxias: Episodio IV - Una nueva esperanza",
+    "año_publicacion": 1977,
+    "actores": [
+      "Mark Hamill",
+      "Harrison Ford",
+      "Carrie Fisher"
+    ]
+  },
+  {
+    "id": 13,
+    "Nombre": "El silencio de los corderos",
+    "año_publicacion": 1991,
+    "actores": [
+      "Jodie Foster",
+      "Anthony Hopkins",
+      "Scott Glenn"
+    ]
+  },
+  {
+    "id": 14,
+    "Nombre": "Tiempos modernos",
+    "año_publicacion": 1936,
+    "actores": [
+      "Charles Chaplin",
+      "Paulette Goddard",
+      "Henry Bergman"
+    ]
+  },
+  {
+    "id": 15,
+    "Nombre": "Toy Story",
+    "año_publicacion": 1995,
+    "actores": [
+      "Tom Hanks",
+      "Tim Allen",
+      "Don Rickles"
+    ]
+  },
+  {
+    "id": 16,
+    "Nombre": "Titanic",
+    "año_publicacion": 1997,
+    "actores": [
+      "Leonardo DiCaprio",
+      "Kate Winslet",
+      "Billy Zane"
+    ]
+  },
+  {
+    "id": 17,
+    "Nombre": "Seven",
+    "año_publicacion": 1995,
+    "actores": [
+      "Brad Pitt",
+      "Morgan Freeman",
+      "Gwyneth Paltrow"
+    ]
+  },
+  {
+    "id": 18,
+    "Nombre": "Gladiator",
+    "año_publicacion": 2000,
+    "actores": [
+      "Russell Crowe",
+      "Joaquin Phoenix",
+      "Connie Nielsen"
+    ]
+  },
+  {
+    "id": 19,
+    "Nombre": "La vida es bella",
+    "año_publicacion": 1997,
+    "actores": [
+      "Roberto Benigni",
+      "Nicoletta Braschi",
+      "Giorgio Cantarini"
+    ]
+  },
+  {
+    "id": 20,
+    "Nombre": "Whiplash",
+    "año_publicacion": 2014,
+    "actores": [
+      "Miles Teller",
+      "J.K. Simmons",
+      "Melissa Benoist"
+    ]
+  }
+]
