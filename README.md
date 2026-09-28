@@ -33,7 +33,12 @@ Salida  : 200 OK
   "id": 1, 
   "nombre": "Matrix", 
   "año": 1999, 
-  "actores": [1, 2]
+  "actores":  [
+    "Keanu Reeves",
+    "Carrie-Anne Moss",
+    "Laurence Fishburne"
+  ]
+
 }
 
 --- CREAR UNA PELÍCULA ---
