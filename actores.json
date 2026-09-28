@@ -1,77 +1,53 @@
 [
-  {
-    "id": 1,
-    "nombre_completo": "Keanu Reeves",
-    "año_nacimiento": 1964
-  },
-  {
-    "id": 2,
-    "nombre_completo": "Carrie-Anne Moss",
-    "año_nacimiento": 1967
-  },
-  {
-    "id": 3,
-    "nombre_completo": "Laurence Fishburne",
-    "año_nacimiento": 1961
-  },
-  {
-    "id": 4,
-    "nombre_completo": "Leonardo DiCaprio",
-    "año_nacimiento": 1974
-  },
-  {
-    "id": 5,
-    "nombre_completo": "Joseph Gordon-Levitt",
-    "año_nacimiento": 1981
-  },
-  {
-    "id": 6,
-    "nombre_completo": "Elliot Page",
-    "año_nacimiento": 1987
-  },
-  {
-    "id": 7,
-    "nombre_completo": "Matthew McConaughey",
-    "año_nacimiento": 1969
-  },
-  {
-    "id": 8,
-    "nombre_completo": "Anne Hathaway",
-    "año_nacimiento": 1982
-  },
-  {
-    "id": 9,
-    "nombre_completo": "Jessica Chastain",
-    "año_nacimiento": 1977
-  },
-  {
-    "id": 10,
-    "nombre_completo": "Christian Bale",
-    "año_nacimiento": 1974
-  },
-  {
-    "id": 11,
-    "nombre_completo": "Heath Ledger",
-    "año_nacimiento": 1979
-  },
-  {
-    "id": 12,
-    "nombre_completo": "Aaron Eckhart",
-    "año_nacimiento": 1968
-  },
-  {
-    "id": 13,
-    "nombre_completo": "John Travolta",
-    "año_nacimiento": 1954
-  },
-  {
-    "id": 14,
-    "nombre_completo": "Samuel L. Jackson",
-    "año_nacimiento": 1948
-  },
-  {
-    "id": 15,
-    "nombre_completo": "Uma Thurman",
-    "año_nacimiento": 1970
-  }
+  { "id": 1, "nombre": "Keanu Reeves", "año_nacimiento": 1964 },
+  { "id": 2, "nombre": "Carrie-Anne Moss", "año_nacimiento": 1967 },
+  { "id": 3, "nombre": "Laurence Fishburne", "año_nacimiento": 1961 },
+  { "id": 4, "nombre": "Leonardo DiCaprio", "año_nacimiento": 1974 },
+  { "id": 5, "nombre": "Joseph Gordon-Levitt", "año_nacimiento": 1981 },
+  { "id": 6, "nombre": "Elliot Page", "año_nacimiento": 1987 },
+  { "id": 7, "nombre": "Kate Winslet", "año_nacimiento": 1975 },
+  { "id": 8, "nombre": "Christian Bale", "año_nacimiento": 1974 },
+  { "id": 9, "nombre": "Heath Ledger", "año_nacimiento": 1979 },
+  { "id": 10, "nombre": "John Travolta", "año_nacimiento": 1954 },
+  { "id": 11, "nombre": "Uma Thurman", "año_nacimiento": 1970 },
+  { "id": 12, "nombre": "Samuel L. Jackson", "año_nacimiento": 1948 },
+  { "id": 13, "nombre": "Brad Pitt", "año_nacimiento": 1963 },
+  { "id": 14, "nombre": "Edward Norton", "año_nacimiento": 1969 },
+  { "id": 15, "nombre": "Tom Hanks", "año_nacimiento": 1956 },
+  { "id": 16, "nombre": "Robin Wright", "año_nacimiento": 1966 },
+  { "id": 17, "nombre": "Elijah Wood", "año_nacimiento": 1981 },
+  { "id": 18, "nombre": "Ian McKellen", "año_nacimiento": 1939 },
+  { "id": 19, "nombre": "Mark Hamill", "año_nacimiento": 1951 },
+  { "id": 20, "nombre": "Harrison Ford", "año_nacimiento": 1942 },
+  { "id": 21, "nombre": "Carrie Fisher", "año_nacimiento": 1956 },
+  { "id": 22, "nombre": "Robert Downey Jr.", "año_nacimiento": 1965 },
+  { "id": 23, "nombre": "Chris Evans", "año_nacimiento": 1981 },
+  { "id": 24, "nombre": "Scarlett Johansson", "año_nacimiento": 1984 },
+  { "id": 25, "nombre": "Gwyneth Paltrow", "año_nacimiento": 1972 },
+  { "id": 26, "nombre": "Sam Neill", "año_nacimiento": 1947 },
+  { "id": 27, "nombre": "Laura Dern", "año_nacimiento": 1967 },
+  { "id": 28, "nombre": "Jeff Goldblum", "año_nacimiento": 1952 },
+  { "id": 29, "nombre": "Arnold Schwarzenegger", "año_nacimiento": 1947 },
+  { "id": 30, "nombre": "Linda Hamilton", "año_nacimiento": 1956 },
+  { "id": 31, "nombre": "Marlon Brando", "año_nacimiento": 1924 },
+  { "id": 32, "nombre": "Al Pacino", "año_nacimiento": 1940 },
+  { "id": 33, "nombre": "Robert De Niro", "año_nacimiento": 1943 },
+  { "id": 34, "nombre": "Ray Liotta", "año_nacimiento": 1954 },
+  { "id": 35, "nombre": "Joe Pesci", "año_nacimiento": 1943 },
+  { "id": 36, "nombre": "Jonah Hill", "año_nacimiento": 1983 },
+  { "id": 37, "nombre": "Margot Robbie", "año_nacimiento": 1990 },
+  { "id": 38, "nombre": "Morgan Freeman", "año_nacimiento": 1937 },
+  { "id": 39, "nombre": "Tim Robbins", "año_nacimiento": 1958 },
+  { "id": 40, "nombre": "Russell Crowe", "año_nacimiento": 1964 },
+  { "id": 41, "nombre": "Joaquin Phoenix", "año_nacimiento": 1974 },
+  { "id": 42, "nombre": "Matthew McConaughey", "año_nacimiento": 1969 },
+  { "id": 43, "nombre": "Anne Hathaway", "año_nacimiento": 1982 },
+  { "id": 44, "nombre": "Anthony Hopkins", "año_nacimiento": 1937 },
+  { "id": 45, "nombre": "Jodie Foster", "año_nacimiento": 1962 },
+  { "id": 46, "nombre": "Liam Neeson", "año_nacimiento": 1952 },
+  { "id": 47, "nombre": "Ralph Fiennes", "año_nacimiento": 1962 },
+  { "id": 48, "nombre": "Matt Damon", "año_nacimiento": 1970 },
+  { "id": 49, "nombre": "Robin Williams", "año_nacimiento": 1951 },
+  { "id": 50, "nombre": "Sam Worthington", "año_nacimiento": 1976 },
+  { "id": 51, "nombre": "Zoe Saldana", "año_nacimiento": 1978 }
 ]
