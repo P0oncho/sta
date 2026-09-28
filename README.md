@@ -5,6 +5,7 @@ https://p0oncho.github.io/sta/
 =========================================================
       DOCUMENTACIÓN DE LA API: PELÍCULAS Y ACTORES
 =========================================================
+Lanzamiento del servidor: python server.py
 URL Base: http://localhost:8000
 Herramienta de prueba recomendada: cURL (Terminal)
 
