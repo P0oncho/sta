@@ -74,17 +74,24 @@ def manejar_post_peliculas(partes, datos):
     # Añadir actor a película (/peliculas/5/actores)
     elif len(partes) == 4 and partes[3] == "actores":
         id_peli = int(partes[2])
-        id_actor = int(datos["id_actor"])
         
+        # 1. Normalizar los datos: asegurarnos de que siempre sea una lista
+        if isinstance(datos["id_actor"], list):
+            ids_nuevos = [int(id_a) for id_a in datos["id_actor"]]
+        else:
+            ids_nuevos = [int(datos["id_actor"])]
+        
+        # 2. Buscar la película y añadir todos los IDs
         for peli in lista:
             if peli["id"] == id_peli:
-                if id_actor not in peli["actores"]:
-                    peli["actores"].append(id_actor)
+                for id_nuevo in ids_nuevos:
+                    if id_nuevo not in peli["actores"]:
+                        peli["actores"].append(id_nuevo)
+                
                 guardar_json("peliculas.json", lista)
                 return 200, peli
+                
         return 404, {"error": "Película no encontrada"}
-        
-    return 404, {"error": "Ruta incorrecta"}
 
 def manejar_put_peliculas(partes, datos):
     # Modificar película completa (/peliculas/5)

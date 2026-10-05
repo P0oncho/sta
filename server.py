@@ -15,9 +15,27 @@ class MiAPI(BaseHTTPRequestHandler):
         self.wfile.write(texto.encode('utf-8'))
 
     def leer_datos(self):
-        # Convierte los parámetros de la URL (?nombre=Pepe&año=2000) a un diccionario
-        parametros = urlparse(self.path).query
-        return dict(parse_qsl(parametros))
+        # 1. Arreglamos la codificación de la ñ
+        ruta_arreglada = self.path.encode('latin-1').decode('utf-8')
+        
+        # 2. Extraemos los parámetros brutos
+        parametros = urlparse(ruta_arreglada).query
+        lista_parametros = parse_qsl(parametros)
+        
+        datos = {}
+        for clave, valor in lista_parametros:
+            if clave in datos:
+                # Si la clave ya existe y es una lista, añadimos el valor
+                if isinstance(datos[clave], list):
+                    datos[clave].append(valor)
+                # Si existe pero aún no es lista, la convertimos
+                else:
+                    datos[clave] = [datos[clave], valor]
+            else:
+                # Si no existe, la guardamos normalmente
+                datos[clave] = valor
+                
+        return datos
 
     def do_GET(self):
         # Separa la ruta base ("/actores") de los parámetros
