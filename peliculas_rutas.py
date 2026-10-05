@@ -19,7 +19,7 @@ def manejar_get_peliculas(partes):
             peli_terminada = {
                 "id": peli["id"],
                 "nombre": peli["nombre"],
-                "año": peli["ano"],
+                "año": peli["año"],
                 "actores": nombres_actores
             }
             pelis_listas_para_enviar.append(peli_terminada)
