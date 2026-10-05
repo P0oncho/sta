@@ -84,12 +84,30 @@ def manejar_post_peliculas(partes, datos):
         # 2. Buscar la película y añadir todos los IDs
         for peli in lista:
             if peli["id"] == id_peli:
+                # Añadimos los IDs y guardamos en disco (solo los números)
                 for id_nuevo in ids_nuevos:
                     if id_nuevo not in peli["actores"]:
                         peli["actores"].append(id_nuevo)
-                
                 guardar_json("peliculas.json", lista)
-                return 200, peli
+                
+                # 3. Hacer el "Join" para mostrar los nombres al cliente
+                lista_actores = leer_json("actores.json")
+                nombres_actores = []
+                
+                for id_actor_en_peli in peli["actores"]:
+                    for actor in lista_actores:
+                        if actor["id"] == id_actor_en_peli:
+                            nombres_actores.append(actor["nombre"])
+                            
+                # Creamos el paquete final para mostrar
+                peli_terminada = {
+                    "id": peli["id"],
+                    "nombre": peli["nombre"],
+                    "año": peli["año"],
+                    "actores": nombres_actores
+                }
+                
+                return 200, peli_terminada
                 
         return 404, {"error": "Película no encontrada"}
 

@@ -75,7 +75,11 @@ Salida  : 200 OK (JSON del actor solicitado)
 Comando : curl -X POST "http://localhost:8000/actores?nombre=Zendaya+Maree&ano_nacimiento=1996"
 Salida  : 201 Created (Devuelve el actor creado con su ID)
 
---- MODIFICAR ACTOR (COMPLETO O PARCIAL) ---
+--- MODIFICAR ACTOR COMPLETO ---
+Comando : curl -X PUT "http://localhost:8000/actores/1?nombre=Keanu+Charles+Reeves&ano_nacimiento=2024"
+Salida  : 200 OK
+
+--- MODIFICAR ACTOR PARCIAL ---
 Comando : curl -X PATCH "http://localhost:8000/actores/1?nombre=Keanu+Charles+Reeves"
 Salida  : 200 OK 
 

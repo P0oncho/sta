@@ -280,11 +280,8 @@
     },
     {
         "id": 31,
-        "nombre": "Pepe Reina",
-        "a\u00f1o": 2010,
-        "actores": [
-            1,
-            3
-        ]
+        "nombre": "Pepe reina",
+        "a\u00f1o": 1999,
+        "actores": []
     }
 ]
