@@ -93,6 +93,10 @@ Salida  : 204 No Content
 Comando : curl -X POST "http://localhost:8000/peliculas/1/actores?id_actor=2"
 Salida  : 200 OK (Devuelve la película con el actor añadido)
 
+--- AÑADIR VARIOS ACTORES A UNA PELÍCULA ---
+Comando : curl -X POST "http://localhost:8000/peliculas/1/actores?id_actor=2&id_actor=3"
+Salida  : 200 OK (Devuelve la película con el actor añadido)
+
 --- QUITAR UN ACTOR DE UNA PELÍCULA ---
 Comando : curl -X DELETE "http://localhost:8000/peliculas/1/actores/2"
 Salida  : 200 OK (Devuelve la película sin el actor ID 2)
