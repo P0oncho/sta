@@ -43,15 +43,15 @@ Salida  : 200 OK
 }
 
 --- CREAR UNA PELÍCULA ---
-Comando : curl -X POST "http://localhost:8000/peliculas?nombre=Dune&año=2021"
+Comando : curl -X POST "http://localhost:8000/peliculas?nombre=Dune&ano=2021"
 Salida  : 201 Created (Devuelve la película creada con su nuevo ID)
 
 --- MODIFICAR PELÍCULA COMPLETA ---
-Comando : curl -X PUT "http://localhost:8000/peliculas/1?nombre=Dune Parte 2&año=2024"
+Comando : curl -X PUT "http://localhost:8000/peliculas/1?nombre=Dune+Parte+2&ano=2024"
 Salida  : 200 OK (Devuelve la película con los datos reemplazados)
 
 --- MODIFICAR PELÍCULA PARCIALMENTE ---
-Comando : curl -X PATCH "http://localhost:8000/peliculas/1?año=2025"
+Comando : curl -X PATCH "http://localhost:8000/peliculas/1?ano=2025"
 Salida  : 200 OK (Devuelve la película actualizada)
 
 --- BORRAR UNA PELÍCULA ---
@@ -72,11 +72,11 @@ Comando : curl -X GET "http://localhost:8000/actores/1"
 Salida  : 200 OK (JSON del actor solicitado)
 
 --- CREAR UN ACTOR ---
-Comando : curl -X POST "http://localhost:8000/actores?nombre=Zendaya Maree&año_nacimiento=1996"
+Comando : curl -X POST "http://localhost:8000/actores?nombre=Zendaya+Maree&ano_nacimiento=1996"
 Salida  : 201 Created (Devuelve el actor creado con su ID)
 
 --- MODIFICAR ACTOR (COMPLETO O PARCIAL) ---
-Comando : curl -X PATCH "http://localhost:8000/actores/1?nombre=Keanu Charles Reeves"
+Comando : curl -X PATCH "http://localhost:8000/actores/1?nombre=Keanu+Charles+Reeves"
 Salida  : 200 OK 
 
 --- BORRAR UN ACTOR ---

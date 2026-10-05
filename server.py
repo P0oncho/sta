@@ -1,7 +1,7 @@
 import json
 from http.server import BaseHTTPRequestHandler, HTTPServer
+from urllib.parse import urlparse, parse_qsl
 
-# Importamos nuestros archivos como si fueran herramientas
 import peliculas_rutas
 import actores_rutas
 
@@ -15,17 +15,15 @@ class MiAPI(BaseHTTPRequestHandler):
         self.wfile.write(texto.encode('utf-8'))
 
     def leer_datos(self):
-        tamaño = int(self.headers.get('Content-Length', 0))
-        if tamaño > 0:
-            cuerpo = self.rfile.read(tamaño)
-            return json.loads(cuerpo)
-        return {}
+        # Convierte los parámetros de la URL (?nombre=Pepe&año=2000) a un diccionario
+        parametros = urlparse(self.path).query
+        return dict(parse_qsl(parametros))
 
     def do_GET(self):
-        url = self.path
-        partes = url.split('/') 
+        # Separa la ruta base ("/actores") de los parámetros
+        url_limpia = urlparse(self.path).path
+        partes = url_limpia.split('/') 
 
-        # Enrutador
         if len(partes) > 1 and partes[1] == "peliculas":
             codigo, respuesta = peliculas_rutas.manejar_get_peliculas(partes)
             self.mandar_respuesta(codigo, respuesta)
@@ -38,8 +36,8 @@ class MiAPI(BaseHTTPRequestHandler):
             self.mandar_respuesta(404, {"error": "Ruta incorrecta"})
             
     def do_POST(self):
-        url = self.path
-        partes = url.split('/')
+        url_limpia = urlparse(self.path).path
+        partes = url_limpia.split('/')
         datos = self.leer_datos()
         
         if len(partes) > 1 and partes[1] == "peliculas":
@@ -54,8 +52,8 @@ class MiAPI(BaseHTTPRequestHandler):
             self.mandar_respuesta(404, {"error": "Ruta incorrecta"})
 
     def do_PUT(self):
-        url = self.path
-        partes = url.split('/')
+        url_limpia = urlparse(self.path).path
+        partes = url_limpia.split('/')
         datos = self.leer_datos()
         
         if len(partes) > 1 and partes[1] == "peliculas":
@@ -70,8 +68,8 @@ class MiAPI(BaseHTTPRequestHandler):
             self.mandar_respuesta(404, {"error": "Ruta incorrecta"})
 
     def do_PATCH(self):
-        url = self.path
-        partes = url.split('/')
+        url_limpia = urlparse(self.path).path
+        partes = url_limpia.split('/')
         datos = self.leer_datos()
         
         if len(partes) > 1 and partes[1] == "peliculas":
@@ -86,8 +84,8 @@ class MiAPI(BaseHTTPRequestHandler):
             self.mandar_respuesta(404, {"error": "Ruta incorrecta"})
 
     def do_DELETE(self):
-        url = self.path
-        partes = url.split('/')
+        url_limpia = urlparse(self.path).path
+        partes = url_limpia.split('/')
         
         if len(partes) > 1 and partes[1] == "peliculas":
             codigo, respuesta = peliculas_rutas.manejar_delete_peliculas(partes)

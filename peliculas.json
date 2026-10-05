@@ -1,32 +1,280 @@
 [
-  { "id": 1, "nombre": "The Matrix", "año": 1999, "actores": [1, 2, 3] },
-  { "id": 2, "nombre": "Inception", "año": 2010, "actores": [4, 5, 6] },
-  { "id": 3, "nombre": "Titanic", "año": 1997, "actores": [4, 7] },
-  { "id": 4, "nombre": "The Dark Knight", "año": 2008, "actores": [8, 9] },
-  { "id": 5, "nombre": "Pulp Fiction", "año": 1994, "actores": [10, 11, 12] },
-  { "id": 6, "nombre": "Fight Club", "año": 1999, "actores": [13, 14] },
-  { "id": 7, "nombre": "Forrest Gump", "año": 1994, "actores": [15, 16] },
-  { "id": 8, "nombre": "The Lord of the Rings: The Fellowship of the Ring", "año": 2001, "actores": [17, 18] },
-  { "id": 9, "nombre": "The Lord of the Rings: The Return of the King", "año": 2003, "actores": [17, 18] },
-  { "id": 10, "nombre": "Star Wars: Episode IV - A New Hope", "año": 1977, "actores": [19, 20, 21] },
-  { "id": 11, "nombre": "Star Wars: Episode V - The Empire Strikes Back", "año": 1980, "actores": [19, 20, 21] },
-  { "id": 12, "nombre": "The Avengers", "año": 2012, "actores": [22, 23, 24] },
-  { "id": 13, "nombre": "Iron Man", "año": 2008, "actores": [22, 25] },
-  { "id": 14, "nombre": "Jurassic Park", "año": 1993, "actores": [26, 27, 28] },
-  { "id": 15, "nombre": "The Terminator", "año": 1984, "actores": [29, 30] },
-  { "id": 16, "nombre": "Terminator 2: Judgment Day", "año": 1991, "actores": [29, 30] },
-  { "id": 17, "nombre": "The Godfather", "año": 1972, "actores": [31, 32] },
-  { "id": 18, "nombre": "The Godfather: Part II", "año": 1974, "actores": [32, 33] },
-  { "id": 19, "nombre": "Goodfellas", "año": 1990, "actores": [33, 34, 35] },
-  { "id": 20, "nombre": "The Wolf of Wall Street", "año": 2013, "actores": [4, 36, 37] },
-  { "id": 21, "nombre": "Se7en", "año": 1995, "actores": [13, 38] },
-  { "id": 22, "nombre": "The Shawshank Redemption", "año": 1994, "actores": [38, 39] },
-  { "id": 23, "nombre": "Gladiator", "año": 2000, "actores": [40, 41] },
-  { "id": 24, "nombre": "Joker", "año": 2019, "actores": [41] },
-  { "id": 25, "nombre": "Interstellar", "año": 2014, "actores": [42, 43] },
-  { "id": 26, "nombre": "The Silence of the Lambs", "año": 1991, "actores": [44, 45] },
-  { "id": 27, "nombre": "Schindler's List", "año": 1993, "actores": [46, 47] },
-  { "id": 28, "nombre": "Saving Private Ryan", "año": 1998, "actores": [15, 48] },
-  { "id": 29, "nombre": "Good Will Hunting", "año": 1997, "actores": [48, 49] },
-  { "id": 30, "nombre": "Avatar", "año": 2009, "actores": [50, 51] }
+    {
+        "id": 1,
+        "nombre": "The Matrix",
+        "a\u00f1o": 1999,
+        "actores": [
+            1,
+            2,
+            3
+        ]
+    },
+    {
+        "id": 2,
+        "nombre": "Inception",
+        "a\u00f1o": 2010,
+        "actores": [
+            4,
+            5,
+            6
+        ]
+    },
+    {
+        "id": 3,
+        "nombre": "Titanic",
+        "a\u00f1o": 1997,
+        "actores": [
+            4,
+            7
+        ]
+    },
+    {
+        "id": 4,
+        "nombre": "The Dark Knight",
+        "a\u00f1o": 2008,
+        "actores": [
+            8,
+            9
+        ]
+    },
+    {
+        "id": 5,
+        "nombre": "Pulp Fiction",
+        "a\u00f1o": 1994,
+        "actores": [
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "Fight Club",
+        "a\u00f1o": 1999,
+        "actores": [
+            13,
+            14
+        ]
+    },
+    {
+        "id": 7,
+        "nombre": "Forrest Gump",
+        "a\u00f1o": 1994,
+        "actores": [
+            15,
+            16
+        ]
+    },
+    {
+        "id": 8,
+        "nombre": "The Lord of the Rings: The Fellowship of the Ring",
+        "a\u00f1o": 2001,
+        "actores": [
+            17,
+            18
+        ]
+    },
+    {
+        "id": 9,
+        "nombre": "The Lord of the Rings: The Return of the King",
+        "a\u00f1o": 2003,
+        "actores": [
+            17,
+            18
+        ]
+    },
+    {
+        "id": 10,
+        "nombre": "Star Wars: Episode IV - A New Hope",
+        "a\u00f1o": 1977,
+        "actores": [
+            19,
+            20,
+            21
+        ]
+    },
+    {
+        "id": 11,
+        "nombre": "Star Wars: Episode V - The Empire Strikes Back",
+        "a\u00f1o": 1980,
+        "actores": [
+            19,
+            20,
+            21
+        ]
+    },
+    {
+        "id": 12,
+        "nombre": "The Avengers",
+        "a\u00f1o": 2012,
+        "actores": [
+            22,
+            23,
+            24
+        ]
+    },
+    {
+        "id": 13,
+        "nombre": "Iron Man",
+        "a\u00f1o": 2008,
+        "actores": [
+            22,
+            25
+        ]
+    },
+    {
+        "id": 14,
+        "nombre": "Jurassic Park",
+        "a\u00f1o": 1993,
+        "actores": [
+            26,
+            27,
+            28
+        ]
+    },
+    {
+        "id": 15,
+        "nombre": "The Terminator",
+        "a\u00f1o": 1984,
+        "actores": [
+            29,
+            30
+        ]
+    },
+    {
+        "id": 16,
+        "nombre": "Terminator 2: Judgment Day",
+        "a\u00f1o": 1991,
+        "actores": [
+            29,
+            30
+        ]
+    },
+    {
+        "id": 17,
+        "nombre": "The Godfather",
+        "a\u00f1o": 1972,
+        "actores": [
+            31,
+            32
+        ]
+    },
+    {
+        "id": 18,
+        "nombre": "The Godfather: Part II",
+        "a\u00f1o": 1974,
+        "actores": [
+            32,
+            33
+        ]
+    },
+    {
+        "id": 19,
+        "nombre": "Goodfellas",
+        "a\u00f1o": 1990,
+        "actores": [
+            33,
+            34,
+            35
+        ]
+    },
+    {
+        "id": 20,
+        "nombre": "The Wolf of Wall Street",
+        "a\u00f1o": 2013,
+        "actores": [
+            4,
+            36,
+            37
+        ]
+    },
+    {
+        "id": 21,
+        "nombre": "Se7en",
+        "a\u00f1o": 1995,
+        "actores": [
+            13,
+            38
+        ]
+    },
+    {
+        "id": 22,
+        "nombre": "The Shawshank Redemption",
+        "a\u00f1o": 1994,
+        "actores": [
+            38,
+            39
+        ]
+    },
+    {
+        "id": 23,
+        "nombre": "Gladiator",
+        "a\u00f1o": 2000,
+        "actores": [
+            40,
+            41
+        ]
+    },
+    {
+        "id": 24,
+        "nombre": "Joker",
+        "a\u00f1o": 2019,
+        "actores": [
+            41
+        ]
+    },
+    {
+        "id": 25,
+        "nombre": "Interstellar",
+        "a\u00f1o": 2014,
+        "actores": [
+            42,
+            43
+        ]
+    },
+    {
+        "id": 26,
+        "nombre": "The Silence of the Lambs",
+        "a\u00f1o": 1991,
+        "actores": [
+            44,
+            45
+        ]
+    },
+    {
+        "id": 27,
+        "nombre": "Schindler's List",
+        "a\u00f1o": 1993,
+        "actores": [
+            46,
+            47
+        ]
+    },
+    {
+        "id": 28,
+        "nombre": "Saving Private Ryan",
+        "a\u00f1o": 1998,
+        "actores": [
+            15,
+            48
+        ]
+    },
+    {
+        "id": 29,
+        "nombre": "Good Will Hunting",
+        "a\u00f1o": 1997,
+        "actores": [
+            48,
+            49
+        ]
+    },
+    {
+        "id": 30,
+        "nombre": "Avatar",
+        "a\u00f1o": 2009,
+        "actores": [
+            50,
+            51
+        ]
+    }
 ]
