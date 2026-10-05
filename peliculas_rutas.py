@@ -42,7 +42,7 @@ def manejar_get_peliculas(partes):
                 peli_terminada = {
                     "id": peli["id"],
                     "nombre": peli["nombre"],
-                    "año": peli["ano"],
+                    "año": peli["año"],
                     "actores": nombres_actores
                 }
                 return 200, peli_terminada
