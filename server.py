@@ -7,12 +7,17 @@ import actores_rutas
 
 class MiAPI(BaseHTTPRequestHandler):
     
+    
     def mandar_respuesta(self, codigo, diccionario):
         self.send_response(codigo)
-        self.send_header('Content-type', 'application/json')
+        self.send_header('Content-type', 'application/json; charset=utf-8')
+        self.send_header('Access-Control-Allow-Origin', 'http://localhost:5173')
+        self.send_header('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS')
+        self.send_header('Access-Control-Allow-Headers', 'Content-Type')
         self.end_headers()
-        texto = json.dumps(diccionario)
+        texto = json.dumps(diccionario, ensure_ascii=False)
         self.wfile.write(texto.encode('utf-8'))
+
 
     def leer_datos(self):
         # 1. Arreglamos la codificación de la ñ

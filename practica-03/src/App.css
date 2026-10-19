@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #666;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px 26px;
+  overflow: hidden;
+}
+
+header {
+  text-align: center;
+  font-size: 18px;
+  margin: 12px 0 55px;
+}
+
+.categoria {
+  margin-bottom: 32px;
+}
+
+.categoria h2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 0 10px 10px;
+}
+
+.peliculas {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding: 10px 8px 12px;
+  border: 1px solid #222;
+  background: #999;
+}
+
+.pelicula {
+  flex: 0 0 147px;
+  height: 87px;
+  padding: 10px 8px;
+  background: #e36666;
+  border: 1px solid #222;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.pelicula h3 {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.pelicula button {
+  align-self: flex-end;
+  background: #e00000;
+  color: black;
+  border: 1px solid #550000;
+  padding: 8px 10px;
+  font-size: 8px;
+  cursor: pointer;
+}
+
+.pelicula button:hover {
+  background: #ff3333;
+}
+
+.movie-info {
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+
+.movie-info p {
+  margin: 4px 0;
+}
+
+.pelicula {
+  height: auto;
+  min-height: 87px;
+  align-self: flex-start;
+  gap: 10px;
+}
+
+.pelicula button {
+  margin-top: auto;
+}
+
+html {
+  background-color: #1a1a1a;
+  overscroll-behavior-y: none;
+}
+
+body {
+  margin: 0;
+  overscroll-behavior-y: none;
+}
+
+#root {
+  min-height: 100vh;
+}

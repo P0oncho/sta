@@ -20,6 +20,7 @@ def manejar_get_peliculas(partes):
                 "id": peli["id"],
                 "nombre": peli["nombre"],
                 "año": peli["año"],
+                "categoria": peli["categoria"],
                 "actores": nombres_actores
             }
             pelis_listas_para_enviar.append(peli_terminada)
@@ -43,6 +44,7 @@ def manejar_get_peliculas(partes):
                     "id": peli["id"],
                     "nombre": peli["nombre"],
                     "año": peli["año"],
+                    "categoria": peli["categoria"],
                     "actores": nombres_actores
                 }
                 return 200, peli_terminada
@@ -65,6 +67,7 @@ def manejar_post_peliculas(partes, datos):
             "id": id_mas_alto + 1,
             "nombre": datos["nombre"],
             "año": int(datos["ano"]),
+            "categoria": datos["categoria"],
             "actores": []
         }
         lista.append(nuevo_item)
@@ -104,6 +107,7 @@ def manejar_post_peliculas(partes, datos):
                     "id": peli["id"],
                     "nombre": peli["nombre"],
                     "año": peli["año"],
+                    "categoria": peli["categoria"],
                     "actores": nombres_actores
                 }
                 
