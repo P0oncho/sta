@@ -108,3 +108,29 @@ header {
 .pelicula button {
   margin-top: auto;
 }
+
+.categoria h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.categoria h2 a:hover {
+  text-decoration: underline;
+}
+
+/* Botón de volver en la página de una sola categoría */
+.volver {
+  display: block;
+  width: fit-content;
+  margin-bottom: 24px;
+  padding: 8px 12px;
+  background: #999;
+  border: 1px solid #222;
+  color: black;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.volver:hover {
+  background: #bbb;
+}
